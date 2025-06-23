@@ -5,29 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ivory Elizabeth</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background-color: #fefefe;
+      background-color: #fffdfc;
       color: #1a1a1a;
-      line-height: 1.6;
+      line-height: 1.7;
+    }
+    nav {
+      background-color: #fbe8dc;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      text-decoration: none;
+      color: #5b2a2a;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     header {
-      background-color: #fffaf5;
+      background-color: #fff2eb;
       padding: 4rem 1rem 2rem;
       text-align: center;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 2px solid #e6d1c4;
     }
     header h1 {
       margin: 0;
-      font-size: 3rem;
-      font-weight: 300;
+      font-size: 3.25rem;
+      font-weight: 400;
       letter-spacing: 1px;
     }
     header p {
       margin-top: 1rem;
-      font-size: 1.25rem;
-      max-width: 650px;
+      font-size: 1.3rem;
+      max-width: 700px;
       margin-left: auto;
       margin-right: auto;
       font-style: italic;
@@ -39,39 +60,41 @@
       margin: auto;
     }
     h2 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: 400;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #eee;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #dec8ba;
       padding-bottom: 0.5rem;
-      color: #333;
+      color: #4a2f27;
     }
     .poem {
       white-space: pre-wrap;
       margin-bottom: 3rem;
       background-color: #fff;
-      border-left: 4px solid #d4a373;
+      border-left: 4px solid #c29574;
       padding: 1rem 1.5rem;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
     .poem h3 {
       margin-top: 0;
-      color: #5a3e36;
-      font-weight: 500;
+      color: #6e3e31;
+      font-weight: 600;
     }
     .gallery img {
       width: 100%;
-      margin-bottom: 2rem;
+      max-width: 450px;
+      display: block;
+      margin: 1.5rem auto;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     .videos a {
       display: block;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       margin-bottom: 1rem;
-      color: #6b3e26;
+      color: #813f27;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600;
     }
     .videos a:hover {
       text-decoration: underline;
@@ -81,54 +104,74 @@
       padding: 2rem 1rem;
       font-size: 0.9rem;
       color: #888;
-      background-color: #fafafa;
-      border-top: 1px solid #eee;
+      background-color: #f9f3ef;
+      border-top: 1px solid #e0d3cb;
     }
   </style>
 </head>
 <body>
-  <header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#films">Films</a>
+    <a href="#poetry">Poetry</a>
+    <a href="#modeling">Modeling</a>
+  </nav>
+
+  <header id="home">
     <h1>Ivory Elizabeth</h1>
     <p>
-      Storyteller raised in Harlem, Howard University graduate in Media & Film, minor in Afro-American Studies. I tell the stories that go unheard—through film, fashion, and words.
+      Storyteller raised in Harlem. Howard University graduate in Media & Film with a minor in Afro-American Studies. I tell the stories that go unheard—through film, fashion, and words.
     </p>
   </header>
 
-  <section class="videos">
+  <section id="films" class="videos">
     <h2>Short Films</h2>
-    <a href="https://youtu.be/Nk0aZflp0dQ" target="_blank">Watch: Broken Lilies</a>
-    <a href="https://youtu.be/VbUXG0BZJ8I" target="_blank">Watch: Bloom</a>
+    <a href="https://youtu.be/Nk0aZflp0dQ" target="_blank">Watch: Joyful Echoes</a>
+    <a href="https://youtu.be/VbUXG0BZJ8I" target="_blank">Watch: Butterflies Think With Their Feet</a>
   </section>
 
-  <section>
+  <section id="poetry">
     <h2>Poetry</h2>
     <div class="poem">
       <h3>Cracks of Strength</h3>
       <p>Steps on pavement, worn and cracked,
-Gum spit out, no turning back...
-(Full poem preserved)</p>
+Gum spit out, no turning back.
+Kids stomp down with careless shout,
+A mother's life, used, worn out...
+Yet, in the cracks, new life can grow,
+In quiet strength, her spirit glows.
+Though worn, she rises, finds her ground,
+In every step, her voice unbound.
+For in the wear, there's still a spark,
+A mother’s heart, strong, bright, and dark.
+Like the pavement, though scarred and torn,
+She finds her peace, though she’s been worn.</p>
     </div>
     <div class="poem">
       <h3>Held by His Word</h3>
       <p>His power and His words, a shield so pure,
-A love that protects, steadfast and sure...
-(Full poem preserved)</p>
+A love that protects, steadfast and sure.
+His embrace, unyielding, holding us tight,
+We think our mothers’ love is the brightest light...
+For there’s none like Jehovah, our strength, our guide.</p>
     </div>
     <div class="poem">
       <h3>The Unseen Path</h3>
       <p>You keep things around that don’t hold weight,
 Clinging to what no longer resonates...
-(Full poem preserved)</p>
+You’ve been holding pieces of a past that never fit,
+Now it’s time to make room for the life that’s yours to create.</p>
     </div>
     <div class="poem">
       <h3>Innocence Under the Harlem Sun</h3>
       <p>In Harlem’s heart, where rhythms weave,
 Four girls dance on the dreams they believe...
-(Full poem preserved)</p>
+For these Black girls, bright as the sun,
+Remind us, childhoods just begun.</p>
     </div>
   </section>
 
-  <section class="gallery">
+  <section id="modeling" class="gallery">
     <h2>Modeling</h2>
     <img src="IMG-6592.PNG" alt="Modeling photo 1">
     <img src="IMG_9013.PNG" alt="Modeling photo 2">
